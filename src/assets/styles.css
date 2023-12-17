@@ -1,0 +1,76 @@
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+}
+
+
+/*** Navbar Start ***/
+.sticky-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+}
+
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+@media (min-width: 1200px) {
+    .navbar .navbar-collapse .border-top {
+        border-top: none !important;
+    }
+}
+.img-zoomin {
+    transition: 0.5s;
+}
+
+.img-zoomin:hover {
+    transform: scale(1.1);
+}
+.link-hover {
+    transition: 0.5s;
+}
+
+.link-hover:hover {
+    color: var(--bs-primary) !important;
+}
+.news-2 h3 {
+    position: relative;
+}
+
+.news-2 h3::after {
+    content: "";
+    line-height: 1.3rem;
+    background: var(--bs-secondary);
+    position: absolute;
+    width: 68%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    right: 0;
+    opacity: 0.2;
+}
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
